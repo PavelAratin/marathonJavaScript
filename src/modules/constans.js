@@ -1,0 +1,1 @@
+export const items = document.querySelectorAll('.countdown__item > div')

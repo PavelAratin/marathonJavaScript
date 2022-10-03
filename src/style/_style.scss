@@ -7,4 +7,53 @@ body{
   font-family: 'Roboto',sans-serif;
   font-weight: 400;
   font-size: 14px;
+  background-color: #f1f5f8;
+}
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 50px;
+}
+.image{
+  display: block;
+  width: 1000px;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+h2{
+  font-size: 50px;
+}
+h4{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+p{
+  max-width: 850px;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.countdown{
+  display: flex;
+  align-items: center;
+  &__item{
+    width: 100px;
+    height: 50px;
+    background-color: #49a6e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    color: #ffffff;
+    &:not(:last-child){
+      margin-right: 10px;
+    }
+  }
+  &__number{
+    margin-bottom: 5px;
+  }
 }
