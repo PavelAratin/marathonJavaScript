@@ -7,5 +7,5 @@ import { getFetch } from "./modules/getFetch";
 
 window.addEventListener('DOMContentLoaded', function () {
   getFetch();
-  formApply()
+  formApply();
 })

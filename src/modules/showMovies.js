@@ -1,12 +1,13 @@
 import { appPoint } from "./constans"
 import { getClassByRating } from "./getClassByRating";
+import { showModal } from "./modal";
 
 export function showMovies(data) {
   appPoint.innerHTML = '';
   data.films.forEach(function (_, index) {
     let newArr = data.films[index].genres.map(genre => `${genre.genre}`)
     appPoint.innerHTML += `
-    <div class="movie">
+    <div class="movie" data-id="${data.films[index].filmId}">
           <div class="movie__imgbox">
             <img src="${data.films[index].posterUrl}" alt="Film">
             <a href="#" class="movie__link"></a>
@@ -17,5 +18,10 @@ export function showMovies(data) {
         </div>
     `;
   })
-
+  const movies = document.querySelectorAll('.movie');
+  movies.forEach(function(move){
+    move.addEventListener('click',function(){
+      showModal(Number(move.dataset.id));
+    })
+  })
 }
