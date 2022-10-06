@@ -2,12 +2,18 @@
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   grid-gap: 30px;
+  margin-bottom: 50px;
 }
 .movie{
   position: relative;
   &__imgbox{
     margin-bottom: 10px;
     position: relative;
+    height: 420px;
+    img{
+      height: 100%;
+      object-fit: fill;
+    }
   }
   &__title{
     font-size: 25px;
