@@ -1,3 +1,4 @@
+@import 'passwordGenerator';
 *{
   padding: 0;
   margin: 0;
@@ -7,4 +8,11 @@ body{
   font-family: 'Roboto',sans-serif;
   font-weight: 400;
   font-size: 14px;
+  background-color: $colorBg;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
