@@ -1,0 +1,22 @@
+.app-notes-body{
+  padding: 16px;
+  background-color: lightyellow;
+  border-radius: 10px;
+  height: 300px;
+  width: 240px;
+  box-shadow: 2px 2px 5px 2px #cacaca;
+  &__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__title{
+    font-size: 16px;
+  }
+  &__edit,
+  &__delete{
+    cursor: pointer;
+    padding: 5px;
+  }
+}

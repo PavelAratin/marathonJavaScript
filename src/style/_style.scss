@@ -1,10 +1,29 @@
+@import 'header';
+@import 'body';
 *{
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 body{
   font-family: 'Roboto',sans-serif;
   font-weight: 400;
   font-size: 14px;
+}
+h1,h2,h3{
+  margin: 0;
+}
+p{
+  margin: 0;
+}
+.container{
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.app-notes__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.hidden{
+  display: none;
 }
